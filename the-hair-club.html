@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Hair Club, Gopal Puri, Aligarh — premium hair, beauty and grooming services.">
+<title>The Hair Club — Aligarh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#181615;--muted:#706a65;--cream:#f7f3ee;--gold:#b38a52;--line:#e7dfd7;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}.serif{font-family:"Playfair Display",serif}
+nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:24px 0;color:#fff}.navin{display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:.3px}.links{display:flex;gap:28px;font-size:14px}.links a{opacity:.92}.links a:hover{opacity:1;color:#e9c995}
+.hero{min-height:92vh;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(10,8,7,.78),rgba(10,8,7,.28)),url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-copy{max-width:680px;padding:110px 0 70px}.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#e5c48d;font-weight:700}.hero h1{font-size:clamp(48px,8vw,88px);line-height:1.02;margin:18px 0 22px}.hero p{font-size:18px;max-width:580px;color:#eee8e1}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:14px 22px;border-radius:999px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:#fff;color:var(--ink)}.btn.gold{background:var(--gold);color:#fff}.btn.ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+.section{padding:92px 0}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,5vw,52px);line-height:1.1;margin:8px 0 14px}.section-head p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about img{width:100%;height:560px;object-fit:cover;border-radius:28px}.kicker{color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}.about h2{font-size:48px;line-height:1.08;margin:12px 0 18px}.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}.feature{padding:20px;border:1px solid var(--line);border-radius:18px;background:#fff}.feature b{display:block;margin-bottom:4px}.feature span{color:var(--muted);font-size:14px}
+.services{background:#1b1816;color:#fff}.services .section-head p{color:#bcb3ac}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid #39332f;border-radius:20px;background:#231f1c}.card .num{color:#d7b477;font-size:13px}.card h3{font-family:"Playfair Display",serif;font-size:28px;margin:28px 0 8px}.card p{color:#bcb3ac;font-size:14px;margin:0}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:250px 250px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:20px}.g1{grid-row:span 2}
+.reviews{background:#fff}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff}.stars{color:#b38a52;letter-spacing:2px}.review p{font-family:"Playfair Display",serif;font-size:20px;line-height:1.45;margin:16px 0}.review small{color:var(--muted)}.review-note{margin-top:20px;color:var(--muted);font-size:12px}
+.cta{padding:75px 0;background:linear-gradient(120deg,#b38a52,#8d693d);color:#fff}.cta-in{display:flex;justify-content:space-between;gap:30px;align-items:center}.cta h2{font-size:44px;line-height:1.1;margin:0 0 8px}.cta p{margin:0;color:#f6eee3}.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.contact-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px}.contact-card h3{font-family:"Playfair Display",serif;font-size:30px;margin-top:0}.info{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}.info:last-child{border:0}.icon{width:34px;height:34px;border-radius:50%;background:#f0e7dc;display:grid;place-items:center;flex:none}.map{border:0;width:100%;height:100%;min-height:380px;border-radius:24px}
+footer{padding:28px 0;background:#151210;color:#9d948d;font-size:13px}.footerin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.links{display:none}.about,.contact{grid-template-columns:1fr}.about img{height:420px}.cards,.review-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 180px 180px}.g1{grid-row:span 2}.g4{grid-column:span 2}.cta-in{flex-direction:column;align-items:flex-start}.section{padding:70px 0}}
+@media(max-width:500px){.hero{min-height:88vh}.hero h1{font-size:52px}.hero p{font-size:16px}.features{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;grid-template-rows:250px 180px 180px 180px}.g1,.g4{grid-column:auto;grid-row:auto}.about h2{font-size:38px}.cta h2{font-size:36px}}
+</style>
+</head>
+<body>
+<nav><div class="container navin"><div class="brand">The Hair Club</div><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+<div class="container"><div class="hero-copy">
+<div class="eyebrow">Hair • Beauty • Grooming</div>
+<h1>Look sharp.<br>Feel unforgettable.</h1>
+<p>A premium salon experience in Gopal Puri, Aligarh — crafted around great hair, confident style and thoughtful service.</p>
+<div class="buttons"><a class="btn primary" href="tel:+919068811964">Call 09068811964</a><a class="btn ghost" href="#contact">Get Directions</a></div>
+</div></div>
+</header>
+
+<main>
+<section class="section" id="about"><div class="container about">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=85" alt="Modern salon interior">
+<div><div class="kicker">The Hair Club</div><h2>Where your style gets personal.</h2><p>From polished cuts to color and beauty care, The Hair Club is designed to make your salon visit feel effortless, elevated and personal.</p>
+<div class="features"><div class="feature"><b>Expert styling</b><span>Personalized cuts, styling and treatments.</span></div><div class="feature"><b>Beauty care</b><span>Beauty services for your complete look.</span></div><div class="feature"><b>Modern ambience</b><span>A clean, comfortable salon setting.</span></div><div class="feature"><b>Easy to reach</b><span>Near Shani Mandir on Agra Road.</span></div></div></div>
+</div></section>
+
+<section class="section services" id="services"><div class="container"><div class="section-head"><div class="kicker">What we do</div><h2 class="serif">Signature salon services</h2><p>A focused menu for hair, beauty and finishing touches. Call ahead for availability and current pricing.</p></div>
+<div class="cards"><div class="card"><div class="num">01</div><h3>Haircuts & Styling</h3><p>Fresh cuts, finishing and occasion-ready styling tailored to your look.</p></div><div class="card"><div class="num">02</div><h3>Hair Color</h3><p>Color, highlights and contemporary looks designed around your hair and style.</p></div><div class="card"><div class="num">03</div><h3>Hair Treatments</h3><p>Care-focused treatments for smoother, healthier-looking and more manageable hair.</p></div><div class="card"><div class="num">04</div><h3>Makeup & Beauty</h3><p>Beauty services for celebrations, events and everyday confidence.</p></div><div class="card"><div class="num">05</div><h3>Skin & Grooming</h3><p>Finishing services that help complete your salon-day refresh.</p></div><div class="card"><div class="num">06</div><h3>Consultation</h3><p>Talk through your desired result before choosing a service or treatment.</p></div></div>
+</div></section>
+
+<section class="section"><div class="container"><div class="section-head"><div class="kicker">The vibe</div><h2 class="serif">A space made for your next look.</h2></div>
+<div class="gallery"><img class="g1" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=85" alt="Hair styling"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=85" alt="Salon styling"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85" alt="Salon interior"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Hair care"><img class="g4" src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=900&q=85" alt="Beauty styling"></div>
+</div></section>
+
+<section class="section reviews" id="reviews"><div class="container"><div class="section-head"><div class="kicker">Client feedback</div><h2 class="serif">What customers are saying</h2><p>The reviews below are selected excerpts from public listings for The Hair Club at the Gopal Puri / Shani Mandir location.</p></div>
+<div class="review-grid"><div class="review"><div class="stars">★★★★★</div><p>“Best service, polite behavior by Rehan bhai.”</p><small>— Tushar Lodhi · public review, Apr 2026</small></div><div class="review"><div class="stars">★★★★★</div><p>“First experience is very nice. I got haircut from Mr. DK also having polite behavior.”</p><small>— Tushar Sharma · public review, Jul 2025</small></div><div class="review"><div class="stars">★★★★★</div><p>“Amazing Butterfly hair cut by Farhan bhaiyaa.”</p><small>— Tanisha · public review, Jan 2026</small></div></div>
+<div class="review-note">Review excerpts and ratings are reproduced for context from publicly available business-listing pages and may change over time.</div>
+</div></section>
+
+<section class="cta"><div class="container cta-in"><div><h2>Ready for your next look?</h2><p>Call The Hair Club to ask about services, availability and appointments.</p></div><a class="btn primary" href="tel:+919068811964">Call now</a></div></section>
+
+<section class="section" id="contact"><div class="container contact"><div class="contact-card"><div class="kicker">Visit us</div><h3>Come by The Hair Club</h3>
+<div class="info"><div class="icon">⌖</div><div><b>Address</b><br>Agra Rd, near Shani Mandir,<br>Gopal Puri, Aligarh, Uttar Pradesh 202001</div></div>
+<div class="info"><div class="icon">☎</div><div><b>Phone</b><br><a href="tel:+919068811964">09068811964</a></div></div>
+<div class="info"><div class="icon">↗</div><div><b>Directions</b><br><a href="https://www.google.com/maps/place/The+Hair+Club/@27.8813851,78.0332607,15z/data=!4m10!1m2!2m1!1sslaoon+near+me+instagram!3m6!1s0x3974a31883019e2d:0x7c24e816bd872df0!8m2!3d27.8721877!4d78.0737594!15sChdzYWxvbiBuZWFyIG1lIGluc3RhZ3JhbVoZIhdzYWxvbiBuZWFyIG1lIGluc3RhZ3JhbZIBDGJlYXV0eV9zYWxvbpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOZlowcFVabHBSRUFF4AEA-gEECAAQLw!16s%2Fg%2F11wtdwv0_v?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Open in Google Maps →</a></div></div>
+</div>
+<iframe class="map" title="The Hair Club map" loading="lazy" src="https://www.google.com/maps?q=The%20Hair%20Club%2C%20Agra%20Road%2C%20Gopal%20Puri%2C%20Aligarh%2C%20Uttar%20Pradesh%20202001&output=embed"></iframe>
+</div></section>
+</main>
+<footer><div class="container footerin"><div>© 2026 The Hair Club · Aligarh</div><div>Hair • Beauty • Grooming</div></div></footer>
+</body>
+</html>
